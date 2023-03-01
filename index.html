@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+	<link rel="stylesheet" href="styles.css"/>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Survey Form</title>
+	</head>
+
+	<body>
+		<div class="overlay">
+			<h1 id="title">What is your favorite Fictional Series?</h1>
+			<p id="description">This includes shows, movies, books, and entire franchises!</p>
+
+			<form id="survey-form">
+				<fieldset>
+					<label id="name-label" for="name">Enter your Name<input id="name" type="text" placeholder="First & Last Name" required></input></label>
+					<label id="email-label" for="email">Enter your Email<input id="email" type="email" placeholder="Email Address" required></input></label>
+					<label id="number-label" for="age">Enter your Age<input id="number" type="number" min="13" max="125" placeholder="Age in Years"></input></label>
+					<br>
+					<label id="dropdown-label" for="dropdown">Which option best describes you?
+						<select id="dropdown">
+							<option value="">Select One</option>
+							<option value="student">Student</option>
+							<option value="partTime">Part-Time Worker</option>
+							<option value="fullTime">Full-Time Worker</option>
+							<option value="unemployed">Unemployed</option>
+						</select>
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<label id="buttons-label" for="genre">What genre do you typically prefer? </label>
+					<label><input id="fantasy" name="genre" type="radio" class="inline" value="fantasy"/> Fantasy</label>
+					<label><input id="scifi" name="genre" type="radio" class="inline" value="science-fiction"/> Science-Fiction</label>
+				</fieldset>
+
+				<fieldset>
+					<label id="buttons-label" for="form">What form of media do you typically prefer?</label>
+					<label><input id="books" name="form" type="radio" class="inline" value="books"/> Books</label>
+					<label><input id="movies" name="form" type="radio" class="inline" value="movies"/> Movies</label>
+					<label><input id="shows" name="form" type="radio" class="inline" value="shows"/> Shows</label>
+					<label><input id="comics" name="form" type="radio" class="inline" value="comics"/> Comics</label>
+					<label><input id="games" name="form" type="radio" class="inline" value="games"/> Video Games</label>
+				</fieldset>
+					
+				<fieldset>
+					<label>What series and/or franchises below do you enjoy? <i>(Check all that apply)</i></label>
+					<label><input id="starwars" type="checkbox" value="starwars" class="inline"/> Star Wars</label>
+					<label><input id="the-hobbit" type="checkbox" value="the-hobbit" class="inline"/> The Hobbit</label>
+					<label><input id="lotr" type="checkbox" value="lotr" class="inline"/> Lord of the Rings</label>
+					<label><input id="asoiaf" type="checkbox" value="asoiaf" class="inline"/> A Song of Ice and Fire <i>(Game of Thrones)</i></label>
+					<label><input id="doctorwho" type="checkbox" value="doctorwho" class="inline"/> Doctor Who</label>
+					<label><input id="narnia" type="checkbox" value="narnia" class="inline"/> The Chronicles of Narnia</label>
+					<label><input id="startrek" type="checkbox" value="startrek" class="inline"/> Star Trek</label>
+					<label><input id="dune" type="checkbox" value="dune" class="inline"/> Dune</label>
+					<label><input id="matrix" type="checkbox" value="matrix" class="inline"/> The Matrix</label>
+					<label><input id="alien" type="checkbox" value="alien" class="inline"/> Alien</label>
+					<label><input id="harrypotter" type="checkbox" value="harrypotter" class="inline"/> Harry Potter</label>
+					<label><input id="witcher" type="checkbox" value="witcher" class="inline"/> The Witcher</label>
+					<label><input id="marvel" type="checkbox" value="marvel" class="inline"/> Marvel Comics & MCU</label>
+					<label><input id="dc" type="checkbox" value="dc" class="inline"/> DC Comics & DCEU</label>
+					<label><input id="other" type="checkbox" value="other" class="inline"/> Other</label>
+					<br>
+					<label id="other-label" for="other">If you chose Other, please explain below!
+						<textarea id="comments" class="input-textarea" placeholder="Put any of your favorite franchises/series here! :D"></textarea>
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<input id="submit" type="submit" class="submit-button" value="Submit"/>
+				</fieldset>
+			</form>
+		<div>
+	</body>
+</html>
